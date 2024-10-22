@@ -1,0 +1,20 @@
+{
+  "name": "artifact-registry",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nodenium-Developers/artifact-registry.git",
+  "author": "Javier <moncadajavier2@yahoo.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+      "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend start\"",
+      "start": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
