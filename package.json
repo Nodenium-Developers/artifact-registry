@@ -11,10 +11,12 @@
     "backend"
   ],
   "scripts": {
-      "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
-      "build": "concurrently \"yarn workspace backend build\" \"yarn workspace frontend build\""
+    "postinstall": "husky",
+    "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
+    "build": "concurrently \"yarn workspace backend build\" \"yarn workspace frontend build\""
   },
   "devDependencies": {
-    "concurrently": "^9.0.1"
+    "concurrently": "^9.0.1",
+    "husky": "^9.1.6"
   }
 }
