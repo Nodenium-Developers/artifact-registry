@@ -28,4 +28,4 @@ _soon to come_
 
 - Repo
   - Concurrently
-  - Husky
+  - Husky (_needs to be set up_)
